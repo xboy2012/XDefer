@@ -6,12 +6,11 @@ var XDefer = function() {
 
     var _promise;
 
-    var _mainPromise = new Promise(function(__resolve) {
-        let deferred = {};
+    var _mainPromise = new Promise(function(_resolve_main) {
         _promise = new Promise(function(resolve, reject) {
             _resolve = resolve;
             _reject = reject;
-            __resolve(deferred);
+            _resolve_main();
         });
     });
 
