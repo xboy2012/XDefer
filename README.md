@@ -106,4 +106,5 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-[travis-url]: https://travis-ci.org/xboy2012/XDefer.svg?branch=master
+[travis-image]: https://img.shields.io/travis/xboy2012/XDefer/master.svg
+[travis-url]: https://travis-ci.org/xboy2012/XDefer
