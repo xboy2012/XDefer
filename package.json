@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/xboy2012/XDefer",
   "devDependencies": {
+    "coveralls": "^2.11.15",
     "mocha": "^3.2.0",
+    "mocha-lcov-reporter": "^1.2.0",
     "should": "^11.1.2"
   }
 }
