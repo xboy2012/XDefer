@@ -1,6 +1,7 @@
 # XDefer
 
 [![Build Status][travis-image]][travis-url]
+[![Test Coverage][coveralls-image]][coveralls-url]
 
 A Defer implementation
 
@@ -108,3 +109,5 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [travis-image]: https://img.shields.io/travis/xboy2012/XDefer/master.svg
 [travis-url]: https://travis-ci.org/xboy2012/XDefer
+[coveralls-image]: https://img.shields.io/coveralls/xboy2012/XDefer/master.svg
+[coveralls-url]: https://coveralls.io/r/xboy2012/XDefer
