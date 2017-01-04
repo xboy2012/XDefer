@@ -1,12 +1,12 @@
 {
   "name": "xdefer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Defer implementation",
   "main": "index.js",
   "author": "xboyliu",
   "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/xboy2012/XDefer/issues"
   },
-  "homepage": "https://github.com/xboy2012/XDefer"
+  "homepage": "https://github.com/xboy2012/XDefer",
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.1.2"
+  }
 }

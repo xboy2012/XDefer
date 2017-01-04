@@ -42,7 +42,7 @@ XDefer.resolve = function(value) {
 };
 
 XDefer.reject = function(value) {
-    return new XDefer().resolve(value);
+    return new XDefer().reject(value);
 };
 
 module.exports = XDefer;

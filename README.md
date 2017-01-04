@@ -1,5 +1,7 @@
 # XDefer
 
+[![Build Status][travis-image]][travis-url]
+
 A Defer implementation
 
 ## Introduction
@@ -103,3 +105,5 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
+
+[travis-url]: https://travis-ci.org/xboy2012/XDefer.svg?branch=master
