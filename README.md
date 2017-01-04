@@ -109,5 +109,5 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [travis-image]: https://img.shields.io/travis/xboy2012/XDefer/master.svg
 [travis-url]: https://travis-ci.org/xboy2012/XDefer
-[coveralls-image]: https://img.shields.io/coveralls/xboy2012/XDefer/master.svg
-[coveralls-url]: https://coveralls.io/r/xboy2012/XDefer
+[coveralls-image]: https://coveralls.io/repos/github/xboy2012/XDefer/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/xboy2012/XDefer?branch=master
