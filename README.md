@@ -2,6 +2,7 @@
 
 [![Build Status][travis-image]][travis-url]
 [![Test Coverage][coveralls-image]][coveralls-url]
+[![Known Vulnerabilities](https://snyk.io/test/github/xboy2012/xdefer/badge.svg)](https://snyk.io/test/github/xboy2012/xdefer)
 
 A Defer implementation
 
