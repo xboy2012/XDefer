@@ -1,8 +1,11 @@
 # XDefer
 
+[![npm][npm]][npm-url]
+[![node][node]][node-url]
+[![deps][deps]][deps-url]
 [![Build Status][travis-image]][travis-url]
 [![Test Coverage][coveralls-image]][coveralls-url]
-[![Known Vulnerabilities](https://snyk.io/test/github/xboy2012/xdefer/badge.svg)](https://snyk.io/test/github/xboy2012/xdefer)
+[![Known Vulnerabilities][bugs-image]][bugs-url]
 
 A Defer implementation
 
@@ -107,8 +110,16 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
+[npm]: https://img.shields.io/npm/v/xdefer.svg
+[npm-url]: https://npmjs.com/package/xdefer
+[node]: https://img.shields.io/node/v/xdefer.svg
+[node-url]: https://nodejs.org
+[deps]: https://img.shields.io/david/xboy2012/xdefer.svg
+[deps-url]: https://david-dm.org/xboy2012/xdefer
 
 [travis-image]: https://img.shields.io/travis/xboy2012/XDefer/master.svg
 [travis-url]: https://travis-ci.org/xboy2012/XDefer
 [coveralls-image]: https://coveralls.io/repos/github/xboy2012/XDefer/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/xboy2012/XDefer?branch=master
+[bugs-image]: https://snyk.io/test/github/xboy2012/xdefer/badge.svg
+[bugs-url]: https://snyk.io/test/github/xboy2012/xdefer
