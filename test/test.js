@@ -1,6 +1,6 @@
 var assert = require('assert');
 var should = require('should/as-function');
-var XDefer = require('..');
+var XDefer = require('../dist/es5');
 var noop = function() {};
 
 describe('XDefer#promise()', function() {

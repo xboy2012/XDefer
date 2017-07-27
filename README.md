@@ -23,8 +23,13 @@ And developers should never rely on the execute order, which might get you into 
 You may wonder what does the mainPromise object means?
 In the XDefer implementation, we just assume that the Promise construct function is executed asynchornously, therefore the XDefer Object maintains another "Main Promise" Object (as seen in the source code), and the APIs(resolve()/reject()/promise()) follows the Main Promise Object.
 
-In current version of XDefer, we use the Promise from global scope (means 'global' in Node.js / 'window' in browser).
-You have to take care of the compatibility by yourself. It's the recommend way is to just import a Promise library/polyfill. Go and find your favorite one. Good luck~~ 
+Now XDefer will smartly detect whether Promise constructor is synchornous or not, thus using different implements to improve the performance by removing unnecessary logic.
+
+If omitted, the Promise constructor will be the Promise from global scope (means 'global' in Node.js / 'window' in browser, including polyfilled Promise object).
+
+You have to take care of the compatibility by yourself. It's the recommend way is to just import a Promise library/polyfill. Go and find your favorite one. Good luck~~
+
+You can whether overwrite the default Promise constructor by XDefer.setPromise(...) or just add extra param to the XDefer constructor to indicate what Promise you want to use exactly.
 
 Thanks for your attention to my first official project on GitHub, which will make me do better.
 
@@ -57,6 +62,12 @@ import XDefer from 'xdefer'
 var defer = new XDefer();
 ```
 
+### Construct a new XDefer Object using Bluebird
+```javascript
+var Promise = require('...some other Promise lib');
+var defer = new XDefer(Promise);
+```
+
 ### Resolve/Reject
 
 ```javascript
@@ -75,6 +86,12 @@ promise.then(function() {
   console.log("Some Error Occurs", e);
 });
 ```
+### Overwrite the default Promise constructor
+```javascript
+var Promise = require('...some other Promise lib');
+XDefer.setPromise(Promise);
+```
+
 
 ### Shortcuts
 
