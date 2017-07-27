@@ -18,8 +18,8 @@ const output_es5 = () => {
     return new Promise((resolve, reject) => {
         babel.transformFile(`${ROOT_DIR}/dist/es6/index.js`, {
             //ast: false
-            // babelrc: false,
-            // presets: ["es2015"],
+            babelrc: false,
+            presets: [["es2015", {modules: false}]],
             // plugins: [
             //     "transform-remove-strict-mode"
             // ]

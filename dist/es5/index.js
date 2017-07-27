@@ -1,17 +1,13 @@
-var _typeof2 = require('babel-helper-modules/lib/typeof');
-
-var _typeof3 = _interopRequireDefault(_typeof2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //noinspection EqualityComparisonWithCoercionJS
 var isNodeByProcess = typeof process != 'undefined' && process && Object.prototype.toString.call(process) == '[object process]';
 
 //noinspection EqualityComparisonWithCoercionJS
-var isNodeByModule = typeof module != 'undefined' && typeof undefined != 'undefined' && !!undefined && undefined.module != module;
+var isNodeByModule = typeof module != 'undefined' && typeof this != 'undefined' && !!this && this.module != module;
 
 var checkPromise = function checkPromise(Promise) {
-    var typeof_promise = typeof Promise === 'undefined' ? 'undefined' : (0, _typeof3.default)(Promise);
+    var typeof_promise = typeof Promise === 'undefined' ? 'undefined' : _typeof(Promise);
 
     //noinspection EqualityComparisonWithCoercionJS
     return !!(
@@ -83,8 +79,10 @@ var XDefer = function XDefer(Promise) {
     var self = this;
 
     var $$constructorSync = void 0;
-
     if (Promise) {
+        if (!checkPromise(Promise)) {
+            throw Error('Not valid Promise');
+        }
         $$constructorSync = isPromiseConstructorSync(Promise);
     } else {
         Promise = getPromise();
@@ -121,6 +119,7 @@ var XDefer = function XDefer(Promise) {
         };
     } else {
         var _mainPromise = new Promise(function (_resolve_main) {
+            console.log(123);
             _promise = new Promise(function (resolve, reject) {
                 _resolve = resolve;
                 _reject = reject;

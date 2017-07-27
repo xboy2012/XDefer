@@ -11,7 +11,6 @@ const isNodeByModule =
     !!this &&
     this.module != module;
 
-
 const checkPromise = (Promise) => {
     let typeof_promise = typeof(Promise);
 
@@ -100,8 +99,10 @@ const XDefer = function(Promise) {
     const self = this;
 
     let $$constructorSync;
-
     if(Promise) {
+        if(!checkPromise(Promise)) {
+            throw Error('Not valid Promise');
+        }
         $$constructorSync = isPromiseConstructorSync(Promise);
     } else {
         Promise = getPromise();
@@ -138,6 +139,7 @@ const XDefer = function(Promise) {
         };
     } else {
         let _mainPromise = new Promise((_resolve_main) => {
+            console.log(123);
             _promise = new Promise((resolve, reject) => {
                 _resolve = resolve;
                 _reject = reject;
