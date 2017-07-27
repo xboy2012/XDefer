@@ -52,7 +52,7 @@ var XDefer = require('xdefer');
 ### ES6
 
 ```javascript
-import XDefer from 'xdefer'
+import XDefer from 'xdefer';
 ```
 
 ## Usage
@@ -97,7 +97,7 @@ XDefer.setPromise(Promise);
 
 ```javascript
 XDefer.resolve(123); //is the same as (new XDefer()).resolve(123);
-XDefer.reject(Error()); is the same as (new XDefer()).reject(Error());
+XDefer.reject(Error()); //is the same as (new XDefer()).reject(Error());
 ```
 
 ## License
